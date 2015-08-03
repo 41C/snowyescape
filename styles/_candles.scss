@@ -1,0 +1,33 @@
+// ==========================================================================
+// Candles
+// ==========================================================================
+
+// positioning & delay
+
+.candle {
+	position: absolute;
+	width: 10px;
+	height: $flame-height--base;
+	border-radius: 50%;
+	bottom: 60%;
+	left: 48%;
+	opacity: 0;
+	z-index: 2;
+	background-color: $color-flame--base;
+	box-shadow: 0 0 0px 0px $color-flame--base;
+	-webkit-animation: 8s flicker infinite;
+	animation: 8s flicker infinite;
+}
+
+$i: 1;
+@each $position, $delay in $candles {
+	.candle__#{$i} {
+		top: nth($position, 1);
+		left: nth($position, 2);
+		@include animation-delay($delay);
+		body.mobile &{
+			display: none;
+		}
+	}
+	$i: $i + 1;
+}

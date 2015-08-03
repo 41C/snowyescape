@@ -1,0 +1,50 @@
+// ==========================================================================
+// Keyframes
+// ==========================================================================
+
+// http://codepen.io/fusco/pen/NPxzPV (SASS Candle Flicker)
+
+@include keyframes(flicker){
+ 
+  $angle: 0;
+  @each $level, $frequency in $flickers{
+    
+    @for $i from 1 through 100{ 
+      
+      @if $i % (floor( 100 / $frequency )) == 0{
+        
+        $r: random(100);
+        
+        #{($r)}%{
+          $amount: floor( $i / 10 ); 
+          $color-flame: darken($color-flame--base, $amount);
+          opacity: $level;
+          $f-blur: $i * .34;
+          $f-spread: $f-blur * .31;
+          box-shadow: 0 0 #{$f-blur}px #{$f-spread}px $color-flame;
+          @if $i % 2 == 0{
+            $angle: $amount / 2;
+          }
+          @else{
+            $angle: 0 - $amount / 2;
+          }
+          @if $level <= $tolerance {
+            height: 0;
+          }
+          @else if $level <= ( $tolerance - $flame-height--base * .1 ){
+            height: ( ( $flame-height--base - $flame-height--base * .1 ) - 2 * $amount );
+          }
+          @else{
+            height: ( $flame-height--base - 2 * $amount );
+          }
+          -webkit-transform: rotate(#{$angle}deg);
+          transform: rotate(#{$angle}deg);
+        }
+        
+      }
+  
+    }
+    
+  }
+  
+}

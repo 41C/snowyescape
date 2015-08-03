@@ -1,0 +1,68 @@
+// ==========================================================================
+// Config
+// ==========================================================================
+
+// Font Stack
+
+$font-url--google               : "http://fonts.googleapis.com/css?family=Lato:300,400,700|Yesteryear";
+$font-family--primary           : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary         : 'Yesteryear', cursive;
+
+// Descriptive Color Names
+
+$cabin-brown                    : #231513;
+$candle-ember                   : #FFBB35;
+$black                          : #111;
+$black--lighter                 : #222;
+$black--lightest                : #444;
+$white                          : #FFFFF0;
+$flat-orange                    : #FDE3A7;
+$flat-turquoise                 : #1abc9c;
+
+// Colors
+
+$color-primary                  : $cabin-brown;
+$color-candle                   : $candle-ember;
+$color-bg--section              : $black;
+$color-text                     : $flat-orange;
+$link--hover                    : $flat-turquoise;
+$color-selection                : $color-text;
+
+// Details
+
+$border-radius                  : 7px;   
+$push-btn-height                : 4px;
+$hide-duration                  : 0.2s;
+
+// Preloader
+
+$preloader--spin                : 2s;
+$preloader--background-color    : $flat-orange;
+$preloader--color               : $flat-turquoise;
+
+// Candles
+
+$color-flame--base: #FEE3AC;
+$flame-height--base: 6px;
+$tolerance: .3;
+$flickers: (
+  
+//  opacity   : frequency
+          0   :       50,
+       0.19   :       10,
+  
+// Frequency is how many times the flame could possibly hit that opacity level for every 100 frames (increments of 10). Since the hitting is random, there is a great chance that keyframe percentages will be repeated.
+// Keep in mind this compiles to over 2000 lines at its current settings. Try to keep your frequency below 50 for production.
+  
+);
+
+$candles: (
+//      (top,    left): delay
+		(22%,   25.6%):   0s,
+		(22.8%, 28.3%):  .4s,
+		(64.3%, 29.1%):  .3s,
+		(66.0%, 30.3%):  .6s,
+		(62.5%, 30.1%): 1.1s,
+		(71.4%,  7.4%):  .5s,
+		(72.1%,  4.7%): 1.3s
+); 
