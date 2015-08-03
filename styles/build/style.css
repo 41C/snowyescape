@@ -4,420 +4,420 @@ video.fire, video.snow {
 }
 
 @-webkit-keyframes flicker {
-  17% {
+  56% {
     opacity: 0;
     box-shadow: 0 0 0.68px 0.2108px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  28% {
+  1% {
     opacity: 0;
     box-shadow: 0 0 1.36px 0.4216px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  79% {
+  61% {
     opacity: 0;
     box-shadow: 0 0 2.04px 0.6324px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  82% {
+  66% {
     opacity: 0;
     box-shadow: 0 0 2.72px 0.8432px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  27% {
+  15% {
     opacity: 0;
     box-shadow: 0 0 3.4px 1.054px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  69% {
+  97% {
     opacity: 0;
     box-shadow: 0 0 4.08px 1.2648px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  94% {
+  34% {
     opacity: 0;
     box-shadow: 0 0 4.76px 1.4756px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  82% {
+  32% {
     opacity: 0;
     box-shadow: 0 0 5.44px 1.6864px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  62% {
+  69% {
     opacity: 0;
     box-shadow: 0 0 6.12px 1.8972px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  72% {
+  47% {
     opacity: 0;
     box-shadow: 0 0 6.8px 2.108px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  82% {
+  98% {
     opacity: 0;
     box-shadow: 0 0 7.48px 2.3188px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  14% {
+  28% {
     opacity: 0;
     box-shadow: 0 0 8.16px 2.5296px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  49% {
+  98% {
     opacity: 0;
     box-shadow: 0 0 8.84px 2.7404px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  91% {
+  65% {
     opacity: 0;
     box-shadow: 0 0 9.52px 2.9512px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  64% {
+  42% {
     opacity: 0;
     box-shadow: 0 0 10.2px 3.162px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  99% {
+  41% {
     opacity: 0;
     box-shadow: 0 0 10.88px 3.3728px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  19% {
+  81% {
     opacity: 0;
     box-shadow: 0 0 11.56px 3.5836px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  19% {
+  77% {
     opacity: 0;
     box-shadow: 0 0 12.24px 3.7944px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  11% {
+  26% {
     opacity: 0;
     box-shadow: 0 0 12.92px 4.0052px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  19% {
+  68% {
     opacity: 0;
     box-shadow: 0 0 13.6px 4.216px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  93% {
+  47% {
     opacity: 0;
     box-shadow: 0 0 14.28px 4.4268px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  83% {
+  41% {
     opacity: 0;
     box-shadow: 0 0 14.96px 4.6376px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  7% {
+  91% {
     opacity: 0;
     box-shadow: 0 0 15.64px 4.8484px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  80% {
+  27% {
     opacity: 0;
     box-shadow: 0 0 16.32px 5.0592px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  70% {
+  8% {
     opacity: 0;
     box-shadow: 0 0 17px 5.27px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  33% {
+  22% {
     opacity: 0;
     box-shadow: 0 0 17.68px 5.4808px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  81% {
+  100% {
     opacity: 0;
     box-shadow: 0 0 18.36px 5.6916px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  86% {
+  34% {
     opacity: 0;
     box-shadow: 0 0 19.04px 5.9024px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  67% {
+  35% {
     opacity: 0;
     box-shadow: 0 0 19.72px 6.1132px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  61% {
+  55% {
     opacity: 0;
     box-shadow: 0 0 20.4px 6.324px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  87% {
+  62% {
     opacity: 0;
     box-shadow: 0 0 21.08px 6.5348px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  74% {
+  36% {
     opacity: 0;
     box-shadow: 0 0 21.76px 6.7456px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  77% {
+  17% {
     opacity: 0;
     box-shadow: 0 0 22.44px 6.9564px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  56% {
+  17% {
     opacity: 0;
     box-shadow: 0 0 23.12px 7.1672px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  28% {
+  15% {
     opacity: 0;
     box-shadow: 0 0 23.8px 7.378px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  17% {
+  55% {
     opacity: 0;
     box-shadow: 0 0 24.48px 7.5888px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  8% {
+  41% {
     opacity: 0;
     box-shadow: 0 0 25.16px 7.7996px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  28% {
+  13% {
     opacity: 0;
     box-shadow: 0 0 25.84px 8.0104px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  60% {
+  94% {
     opacity: 0;
     box-shadow: 0 0 26.52px 8.2212px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  6% {
+  41% {
     opacity: 0;
     box-shadow: 0 0 27.2px 8.432px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  41% {
+  15% {
     opacity: 0;
     box-shadow: 0 0 27.88px 8.6428px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  78% {
+  67% {
     opacity: 0;
     box-shadow: 0 0 28.56px 8.8536px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  77% {
+  50% {
     opacity: 0;
     box-shadow: 0 0 29.24px 9.0644px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  52% {
+  42% {
     opacity: 0;
     box-shadow: 0 0 29.92px 9.2752px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  23% {
+  82% {
     opacity: 0;
     box-shadow: 0 0 30.6px 9.486px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  46% {
+  11% {
     opacity: 0;
     box-shadow: 0 0 31.28px 9.6968px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  68% {
+  25% {
     opacity: 0;
     box-shadow: 0 0 31.96px 9.9076px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  38% {
+  78% {
     opacity: 0;
     box-shadow: 0 0 32.64px 10.1184px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  39% {
+  88% {
     opacity: 0;
     box-shadow: 0 0 33.32px 10.3292px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  17% {
+  31% {
     opacity: 0;
     box-shadow: 0 0 34px 10.54px #fdd27a;
     height: 0;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
-  5% {
+  75% {
     opacity: 0.19;
     box-shadow: 0 0 3.4px 1.054px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  73% {
+  94% {
     opacity: 0.19;
     box-shadow: 0 0 6.8px 2.108px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  73% {
+  33% {
     opacity: 0.19;
     box-shadow: 0 0 10.2px 3.162px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  3% {
+  62% {
     opacity: 0.19;
     box-shadow: 0 0 13.6px 4.216px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  9% {
+  98% {
     opacity: 0.19;
     box-shadow: 0 0 17px 5.27px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  63% {
+  22% {
     opacity: 0.19;
     box-shadow: 0 0 20.4px 6.324px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  61% {
+  93% {
     opacity: 0.19;
     box-shadow: 0 0 23.8px 7.378px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  99% {
+  91% {
     opacity: 0.19;
     box-shadow: 0 0 27.2px 8.432px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  18% {
+  69% {
     opacity: 0.19;
     box-shadow: 0 0 30.6px 9.486px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  66% {
+  16% {
     opacity: 0.19;
     box-shadow: 0 0 34px 10.54px #fdd27a;
     height: 0;
@@ -426,91 +426,91 @@ video.fire, video.snow {
   }
 }
 @keyframes flicker {
-  23% {
+  93% {
     opacity: 0;
     box-shadow: 0 0 0.68px 0.2108px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  16% {
+  6% {
     opacity: 0;
     box-shadow: 0 0 1.36px 0.4216px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  17% {
+  28% {
     opacity: 0;
     box-shadow: 0 0 2.04px 0.6324px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  34% {
+  77% {
     opacity: 0;
     box-shadow: 0 0 2.72px 0.8432px #fee3ac;
     height: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  95% {
+  98% {
     opacity: 0;
     box-shadow: 0 0 3.4px 1.054px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  36% {
+  17% {
     opacity: 0;
     box-shadow: 0 0 4.08px 1.2648px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  41% {
+  25% {
     opacity: 0;
     box-shadow: 0 0 4.76px 1.4756px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  8% {
+  99% {
     opacity: 0;
     box-shadow: 0 0 5.44px 1.6864px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  89% {
+  84% {
     opacity: 0;
     box-shadow: 0 0 6.12px 1.8972px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  19% {
+  53% {
     opacity: 0;
     box-shadow: 0 0 6.8px 2.108px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  14% {
+  44% {
     opacity: 0;
     box-shadow: 0 0 7.48px 2.3188px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  87% {
+  9% {
     opacity: 0;
     box-shadow: 0 0 8.16px 2.5296px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  4% {
+  62% {
     opacity: 0;
     box-shadow: 0 0 8.84px 2.7404px #fee0a2;
     height: 0;
@@ -524,322 +524,322 @@ video.fire, video.snow {
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  11% {
+  31% {
     opacity: 0;
     box-shadow: 0 0 10.2px 3.162px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  93% {
+  9% {
     opacity: 0;
     box-shadow: 0 0 10.88px 3.3728px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  85% {
+  10% {
     opacity: 0;
     box-shadow: 0 0 11.56px 3.5836px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  43% {
+  52% {
     opacity: 0;
     box-shadow: 0 0 12.24px 3.7944px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  19% {
+  40% {
     opacity: 0;
     box-shadow: 0 0 12.92px 4.0052px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  4% {
+  85% {
     opacity: 0;
     box-shadow: 0 0 13.6px 4.216px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  78% {
+  36% {
     opacity: 0;
     box-shadow: 0 0 14.28px 4.4268px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  37% {
+  18% {
     opacity: 0;
     box-shadow: 0 0 14.96px 4.6376px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  27% {
+  13% {
     opacity: 0;
     box-shadow: 0 0 15.64px 4.8484px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  40% {
+  23% {
     opacity: 0;
     box-shadow: 0 0 16.32px 5.0592px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  2% {
+  53% {
     opacity: 0;
     box-shadow: 0 0 17px 5.27px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  4% {
+  21% {
     opacity: 0;
     box-shadow: 0 0 17.68px 5.4808px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  43% {
+  58% {
     opacity: 0;
     box-shadow: 0 0 18.36px 5.6916px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  89% {
+  80% {
     opacity: 0;
     box-shadow: 0 0 19.04px 5.9024px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  79% {
+  89% {
     opacity: 0;
     box-shadow: 0 0 19.72px 6.1132px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  38% {
+  24% {
     opacity: 0;
     box-shadow: 0 0 20.4px 6.324px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  77% {
+  75% {
     opacity: 0;
     box-shadow: 0 0 21.08px 6.5348px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  29% {
+  91% {
     opacity: 0;
     box-shadow: 0 0 21.76px 6.7456px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  4% {
+  10% {
     opacity: 0;
     box-shadow: 0 0 22.44px 6.9564px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  18% {
+  65% {
     opacity: 0;
     box-shadow: 0 0 23.12px 7.1672px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  4% {
+  45% {
     opacity: 0;
     box-shadow: 0 0 23.8px 7.378px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  99% {
+  49% {
     opacity: 0;
     box-shadow: 0 0 24.48px 7.5888px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  93% {
+  72% {
     opacity: 0;
     box-shadow: 0 0 25.16px 7.7996px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  31% {
+  89% {
     opacity: 0;
     box-shadow: 0 0 25.84px 8.0104px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  89% {
+  60% {
     opacity: 0;
     box-shadow: 0 0 26.52px 8.2212px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  72% {
+  66% {
     opacity: 0;
     box-shadow: 0 0 27.2px 8.432px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  55% {
+  1% {
     opacity: 0;
     box-shadow: 0 0 27.88px 8.6428px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  65% {
+  49% {
     opacity: 0;
     box-shadow: 0 0 28.56px 8.8536px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  56% {
+  71% {
     opacity: 0;
     box-shadow: 0 0 29.24px 9.0644px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  17% {
+  72% {
     opacity: 0;
     box-shadow: 0 0 29.92px 9.2752px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  7% {
+  20% {
     opacity: 0;
     box-shadow: 0 0 30.6px 9.486px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  81% {
+  27% {
     opacity: 0;
     box-shadow: 0 0 31.28px 9.6968px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  21% {
+  84% {
     opacity: 0;
     box-shadow: 0 0 31.96px 9.9076px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  24% {
+  91% {
     opacity: 0;
     box-shadow: 0 0 32.64px 10.1184px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  37% {
+  20% {
     opacity: 0;
     box-shadow: 0 0 33.32px 10.3292px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  24% {
+  26% {
     opacity: 0;
     box-shadow: 0 0 34px 10.54px #fdd27a;
     height: 0;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
-  11% {
+  17% {
     opacity: 0.19;
     box-shadow: 0 0 3.4px 1.054px #fee1a7;
     height: 0;
     -webkit-transform: rotate(0.5deg);
     transform: rotate(0.5deg);
   }
-  43% {
+  34% {
     opacity: 0.19;
     box-shadow: 0 0 6.8px 2.108px #fee0a2;
     height: 0;
     -webkit-transform: rotate(1deg);
     transform: rotate(1deg);
   }
-  21% {
+  74% {
     opacity: 0.19;
     box-shadow: 0 0 10.2px 3.162px #fede9d;
     height: 0;
     -webkit-transform: rotate(1.5deg);
     transform: rotate(1.5deg);
   }
-  97% {
+  11% {
     opacity: 0.19;
     box-shadow: 0 0 13.6px 4.216px #fedc98;
     height: 0;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
   }
-  84% {
+  49% {
     opacity: 0.19;
     box-shadow: 0 0 17px 5.27px #fedb93;
     height: 0;
     -webkit-transform: rotate(2.5deg);
     transform: rotate(2.5deg);
   }
-  62% {
+  10% {
     opacity: 0.19;
     box-shadow: 0 0 20.4px 6.324px #fed98e;
     height: 0;
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
   }
-  83% {
+  96% {
     opacity: 0.19;
     box-shadow: 0 0 23.8px 7.378px #fed789;
     height: 0;
     -webkit-transform: rotate(3.5deg);
     transform: rotate(3.5deg);
   }
-  29% {
+  89% {
     opacity: 0.19;
     box-shadow: 0 0 27.2px 8.432px #fed584;
     height: 0;
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
-  58% {
+  89% {
     opacity: 0.19;
     box-shadow: 0 0 30.6px 9.486px #fdd47f;
     height: 0;
     -webkit-transform: rotate(4.5deg);
     transform: rotate(4.5deg);
   }
-  98% {
+  19% {
     opacity: 0.19;
     box-shadow: 0 0 34px 10.54px #fdd27a;
     height: 0;

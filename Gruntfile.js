@@ -54,11 +54,6 @@ module.exports = function(grunt) {
 
         uglify: {
             main: {
-                options: {
-                    sourceMap: 'js/main.js.map',
-                    sourceMappingURL: 'main.js.map',
-                    sourceMapPrefix: 2
-                },
                 files: {
                     'js/main.min.js': [
                         'js/jquery-1.11.3.js',
