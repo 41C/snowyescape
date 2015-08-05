@@ -74,6 +74,10 @@ p{
 	}
 }
 
+.btn {
+	@include no-select();
+}
+
 // show play button on mobile devices only
 .play {
 	display: none;
