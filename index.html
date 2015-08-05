@@ -37,6 +37,23 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
 	<div id="loading">
 		<div>
 			<h1 class="loader-title">Loading</h1>
@@ -73,6 +90,10 @@
 			<p class="shortcut"><span>H</span> hide text</p>
 			<p class="shortcut"><span>G</span> grayscale</p>
 			<p class="shortcut"><span>SPACEBAR</span> mute</p>
+		</div>
+
+		<div class="credit">
+			<p>Developed by <a href="http://www.linkedin.com/in/jamespistell" target="_blank" class="safaritest">James Pistell</a> &amp; <a href="http://josephfus.co" target="_blank" class="safaritest"> Joseph Fusco</a>. Photo Credit to <a href="http://www.brushcreekranch.com/" target="_blank">Brush Creek Ranch</a><p>
 		</div>
 
 	</div>
@@ -123,7 +144,7 @@
 		<div class="social-share"></div>
 
 		<footer>
-			<p>Developed by <a href="http://www.linkedin.com/in/jamespistell" target="_blank" class="safaritest">James Pistell</a> &amp; <a href="http://josephfus.co" target="_blank" class="safaritest"> Joseph Fusco</a>. Photo Credit to <a href="http://www.brushcreekranch.com/" target="_blank">Brush Creek Ranch</a><p>
+			<a class="twitter-follow-button" href="https://twitter.com/snowyescape" data-size="large" data-show-count="false" data-show-screen-name="false">Follow @snowyescape</a>
 		</footer>
 	</div>
 
