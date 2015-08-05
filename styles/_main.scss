@@ -42,7 +42,6 @@ body {
 	background-color: $black;
 	font-family: $font-family--primary;
 	font-weight: 300;
-	@include no-select();
 
 	&.mobile {
 		background-image: url(media/cabin-bg-mobile.jpg);
@@ -118,8 +117,9 @@ p{
 	position: fixed;
 	left: 0;
 	right: 0;
-	bottom: 70px;
+	bottom: 90px;
 	margin: 0 auto;
+	z-index: 1;
 	&.hide{
 		opacity: 0;
 	}
@@ -230,7 +230,7 @@ video.snow {
 
 	body.mobile &{
 		display: none;
-	}	
+	}
 
 	.fa {
 		@include prefix(transition, transform 0.5s 0.1s ease);
@@ -240,6 +240,7 @@ video.snow {
 .controls{
 	@include prefix(transition, .4s ease);
 	width: 30%;
+	overflow-y: auto;
 	height: 100%;
 	text-align: center;
 	right: -30%;
@@ -295,7 +296,22 @@ video.snow {
 		font-size: 1.2em;
 		width: 100px;
 	}
+
+	.credit {
+		width: 100%;
+		padding: 10px;
+		display: block;
+		margin: 0 auto;
+		color: #444;
+		font-weight: 400;
+		margin-bottom: 30px;
+		a {
+			color: #444;
+			font-weight: 400;
+		}
+	}
 }
+
 
 footer {
 	opacity: .9;
@@ -309,7 +325,7 @@ footer {
 	color: $color-text;
 	padding: 10px;
 	width: 100%;
-	max-width: 500px;
+	max-width: 80px;
 	border-radius: $border-radius;
 	text-align: center;
 	font-size: .9em;
@@ -326,7 +342,7 @@ footer {
 }
 
 .shortcut {
-	color: #333;
+	color: #444;
 	font-weight: 400;
 	span {
 		border: 1px solid #222;
@@ -379,13 +395,13 @@ footer {
 		font-size: 1.2em;
 	}
 	.controls {
-		width: 40%;
-		right: -40%;
+		width: 60%;
+		right: -60%;
 	}
 	#trigger-menu {
 		&:checked {
 			+ #btn-menu {
-				right: 42%;
+				right: 62%;
 			}
 		}
 	}
