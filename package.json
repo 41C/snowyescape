@@ -5,7 +5,7 @@
   "author": "41chap",
   "homepage": "http://snowyescape.com",
   "license": "GPL-2.0",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/41chap/snowyescape.git"
   },
