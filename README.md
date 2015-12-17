@@ -4,15 +4,14 @@ Escape to your own personal log cabin in the woods. Enjoy the ambient sounds of 
 
 ## Setup
 
-[Install Grunt](http://gruntjs.com/getting-started) if you don't already have it. All you really need is [node/npm](https://nodejs.org/) and the [Grunt CLI](http://gruntjs.com/getting-started#installing-the-cli).
-
+We are using [Gulp](http://gulpjs.com/)
 In the root of the the project folder run:
 ```
 npm install
 ```
 This will download the needed dependencies set for this project. In order to compile as well as watch for changes from sass partials and js files run:
 ```
-grunt
+gulp
 ```
 
 ## Credit
