@@ -74,7 +74,7 @@ function watchSnowVolume() {
     var tmp_volume = seSnowVolume;
     setTimeout(function () {
         if (tmp_volume == seSnowVolume) {
-            ga('send', 'event', 'Volume-Beta', 'updated', 'Snow volume at ' + seFireVolume);
+            ga('send', 'event', 'Volume-Beta', 'updated', 'Snow volume at ' + seSnowVolume);
         } else {
             tmp_volume = seSnowVolume;
         }
