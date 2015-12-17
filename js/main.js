@@ -1,35 +1,24 @@
+// set starting values for audio channels
+var seSnowVolume = 15;
+var seFireVolume = 75;
+
 $(document).ready(function(){
-    $(".audio-wind").prop("volume", 0.15);
-    $(".audio-fire").prop("volume", 0.75);
-    ga('send', 'event', 'Volume', 'pageload', 'Snow at 15');
-    ga('send', 'event', 'Volume', 'pageload', 'Fire at 75');
+    $(".audio-wind").prop("volume", (seSnowVolume / 100));
+    $(".audio-fire").prop("volume", (seFireVolume / 100));
 });
 
+// User volume adjustments
 $("a.volume-up-fire").click(volumeUpFire);
 $("a.volume-down-fire").click(volumeDownFire);
 $("a.volume-up-wind").click(volumeUpWind);
 $("a.volume-down-wind").click(volumeDownWind);
+
 $("a.mute").click(toggleMute);
 $(".page").click(function(){
     $("#trigger-menu").attr('checked', false);
 })
 
-var mobileState = 2;
-$(".mobile-play").click(function(){
-    if(mobileState % 2 == 0){
-        $(".audio-mobile").trigger('play');
-        $(this).addClass("playing");
-        mobileState++;
-        ga('send', 'event', 'Controls', 'play', 'mobile-audio');
-    }
-    else{
-        $(this).removeClass("playing");
-        $(".audio-mobile").trigger('pause');
-        mobileState++;
-        ga('send', 'event', 'Controls', 'pause', 'mobile-audio');
-    }
-});
-
+// User volume adjustments
 function volumeUpFire(){
     var volume = $(".audio-fire").prop("volume")+0.05;
     if(volume >1){
@@ -69,14 +58,43 @@ function volumeDownWind(){
 function updateWind(volume){
     volume = Math.round(volume * 100);
     $(".value-wind").html(volume);
-    ga('send', 'event', 'Volume', 'updated', 'Snow at ' + volume);
+    seSnowVolume = volume;
+    watchSnowVolume();
 }
 
 function updateFire(volume){
     volume = Math.round(volume * 100);
     $(".value-fire").html(volume);
-    ga('send', 'event', 'Volume', 'updated', 'Fire at ' + volume);
+    seFireVolume = volume;
+    watchFireVolume();
 }
+
+// report volume if no change after X amount of time.
+function watchSnowVolume() {
+    var tmp_volume = seSnowVolume;
+    setTimeout(function () {
+        if (tmp_volume == seSnowVolume) {
+            ga('send', 'event', 'Volume-Beta', 'updated', 'Snow volume at ' + seFireVolume);
+        } else {
+            tmp_volume = seSnowVolume;
+        }
+    }, 3000);
+}
+
+// report volume if no change after X amount of time.
+function watchFireVolume() {
+    var tmp_volume = seFireVolume;
+    setTimeout(function () {
+        if (tmp_volume == seFireVolume) {
+            ga('send', 'event', 'Volume-Beta', 'updated', 'Fire volume at ' + seFireVolume);
+        } else {
+            tmp_volume = seFireVolume;
+        }
+    }, 3000);
+}
+
+watchSnowVolume();
+watchFireVolume();
 
 function toggleMute(){
     $(".audio-wind").prop("muted",!$(".audio-wind").prop("muted"));
@@ -89,7 +107,7 @@ $(window).load(function() {
     $("#loading").fadeOut("fast");
 })
 
-// check for mobile device
+// mobile device checks and media handling
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -121,6 +139,22 @@ if(isMobile.any()){
     $(".audio-mobile").trigger('pause');
 }
 
+var mobileState = 2;
+$(".mobile-play").click(function(){
+    if(mobileState % 2 == 0){
+        $(".audio-mobile").trigger('play');
+        $(this).addClass("playing");
+        mobileState++;
+        ga('send', 'event', 'Controls', 'play', 'mobile-audio');
+    }
+    else{
+        $(this).removeClass("playing");
+        $(".audio-mobile").trigger('pause');
+        mobileState++;
+        ga('send', 'event', 'Controls', 'pause', 'mobile-audio');
+    }
+});
+
 $('.hide-text').click( function(){
     $('.title').toggleClass("hide");
     $('footer').toggleClass("hide");
@@ -150,4 +184,3 @@ $('body').keyup(function(e){
        $('#trigger-menu').trigger('click');
     }
 });
-
