@@ -18,6 +18,6 @@ grunt
 ## Credit
 
 + CSS Candle Flicker - [codepen.io](http://codepen.io/fusco/pen/NPxzPV)
-+ Photo Credit - [Brush Creek Ranch](http://www.brushcreekranch.com/)
++ Photo Credit - [Brush Creek Ranch](http://www.brushcreekranch.com/?ref=snowyescape.com)
 
-Original Site by [James Pistell](https://www.linkedin.com/in/jamespistell) & [Joseph Fusco](http://github.com/josephfusco)
+Original Site by [James Pistell](https://www.linkedin.com/in/jamespistell/?ref=github.com/41chap/snowyescape) & [Joseph Fusco](http://josephfus.co/?ref=github.com/41chap/snowyescape)
