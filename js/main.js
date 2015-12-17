@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $(".audio-wind").prop("volume", 0.15);
     $(".audio-fire").prop("volume", 0.75);
+    ga('send', 'event', 'Volume', 'pageload', 'Snow at 15');
+    ga('send', 'event', 'Volume', 'pageload', 'Fire at 75');
 });
 
 $("a.volume-up-fire").click(volumeUpFire);
@@ -18,11 +20,13 @@ $(".mobile-play").click(function(){
         $(".audio-mobile").trigger('play');
         $(this).addClass("playing");
         mobileState++;
+        ga('send', 'event', 'Controls', 'play', 'mobile-audio');
     }
     else{
         $(this).removeClass("playing");
         $(".audio-mobile").trigger('pause');
         mobileState++;
+        ga('send', 'event', 'Controls', 'pause', 'mobile-audio');
     }
 });
 
@@ -65,11 +69,13 @@ function volumeDownWind(){
 function updateWind(volume){
     volume = Math.round(volume * 100);
     $(".value-wind").html(volume);
+    ga('send', 'event', 'Volume', 'updated', 'Snow at ' + volume);
 }
 
 function updateFire(volume){
     volume = Math.round(volume * 100);
     $(".value-fire").html(volume);
+    ga('send', 'event', 'Volume', 'updated', 'Fire at ' + volume);
 }
 
 function toggleMute(){
@@ -120,21 +126,26 @@ $('.hide-text').click( function(){
     $('footer').toggleClass("hide");
     $('.social-share').toggleClass("hide");
     $('.hide-text').html($('.hide-text').text() == 'Hide Text' ? 'Show Text' : 'Hide Text');
+    ga('send', 'event', 'Controls', 'toggle', 'hide/show text');
 });
 
 // spacebar pausing
 $('body').keyup(function(e){
-    //console.log(e.keyCode);
+    // toggle mute
     if(e.keyCode == 32){
        $('.mute').trigger('click');
     }
+    // toggle grayscale
     if(e.keyCode == 71){
        $('video.fire').toggleClass("grayscale");
        $('.img-main').toggleClass("grayscale");
+       ga('send', 'event', 'Controls', 'toggled', 'grayscale');
     }
+    // toggle hide/show text
     if(e.keyCode == 72){
        $('.hide-text').trigger('click');
     }
+    // toggle hide/show menu
     if(e.keyCode == 77){
        $('#trigger-menu').trigger('click');
     }
