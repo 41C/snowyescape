@@ -1,8 +1,6 @@
 # SnowyEscape :snowflake::christmas_tree::snowflake:
 
-Escape to your own personal log cabin in the woods. Enjoy the ambient sounds of a roaring fireplace during a snowstorm.
-
-[Website](http://snowyescape.com)
+Escape to your own personal log cabin in the woods. Enjoy the ambient sounds of a roaring fireplace during a snowstorm. [Visit Website →](http://snowyescape.com)
 
 ## Setup
 
