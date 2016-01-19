@@ -4,7 +4,8 @@ Escape to your own personal log cabin in the woods. Enjoy the ambient sounds of 
 
 ## Setup
 
-We are using [Gulp](http://gulpjs.com/)
+We are using [Gulp](http://gulpjs.com/).
+
 In the root of the the project folder run:
 ```
 npm install
