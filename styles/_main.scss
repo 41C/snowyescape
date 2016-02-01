@@ -71,7 +71,8 @@ p{
             transform: translateX(-30%);
         }
 		+ #btn-menu {
-			right: 32%;
+            background-color: rgba($black, 1);
+			right: 30%;
 			.fa{
                 -webkit-transform: scale(1);
                 transform: scale(1);
@@ -232,7 +233,7 @@ video.snow {
 	opacity: .9;
 	top: 0%;
 	right: 0%;
-	background-color: $black;
+	background-color: rgba($black, 1);
 	color: $color-text;
 	border-radius: $border-radius;
 	padding: 20px;
@@ -244,15 +245,19 @@ video.snow {
 	}
 
     &.shrink {
+        background-color: rgba($black, 0);
         .fa {
             -webkit-transform: scale(0.5);
             transform: scale(0.5);
             opacity: .4;
         }
-        &:hover .fa {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            opacity: 1;
+        &:hover {
+            background-color: rgba($black, 1);
+            .fa {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
+            }
         }
     }
 
