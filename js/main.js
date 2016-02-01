@@ -159,6 +159,7 @@ $('.hide-text').click( function(){
     $('.title').toggleClass("hide");
     $('footer').toggleClass("hide");
     $('.social-share').toggleClass("hide");
+    $('#btn-menu').toggleClass("shrink");
     $('.hide-text').html($('.hide-text').text() == 'Hide Text' ? 'Show Text' : 'Hide Text');
     ga('send', 'event', 'Controls', 'toggle', 'hide/show text');
 });

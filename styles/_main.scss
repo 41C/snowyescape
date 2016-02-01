@@ -73,6 +73,9 @@ p{
 		+ #btn-menu {
 			right: 32%;
 			.fa{
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
 				@include prefix(transform, rotate(180deg));
 			}
 		}
@@ -224,11 +227,11 @@ video.snow {
 }
 
 #btn-menu{
-	@include prefix(transition, right 0.3s ease);
+	@include prefix(transition, all 0.3s ease);
 	position: fixed;
 	opacity: .9;
-	top: 2%;
-	right: 2%;
+	top: 0%;
+	right: 0%;
 	background-color: $black;
 	color: $color-text;
 	border-radius: $border-radius;
@@ -240,12 +243,25 @@ video.snow {
 		color: $link--hover;
 	}
 
-	body.mobile &{
+    &.shrink {
+        .fa {
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            opacity: .4;
+        }
+        &:hover .fa {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+	body.mobile & {
 		display: none;
 	}
 
 	.fa {
-		@include prefix(transition, transform 0.5s 0.1s ease);
+		@include prefix(transition, transform 0.2s ease);
 	}
 }
 
