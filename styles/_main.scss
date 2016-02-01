@@ -63,8 +63,13 @@ p{
 	display: none;
 	&:checked {
 		~ .controls {
-			right: 0;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
 		}
+        ~ .page {
+            -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+        }
 		+ #btn-menu {
 			right: 32%;
 			.fa{
@@ -117,9 +122,11 @@ p{
 }
 
 .social-share {
-	@include prefix(transition, $hide-duration ease);
+	@include prefix(transition, all 0.3s ease);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 	position: fixed;
-	left: 0;
+    left: 0;
 	right: 0;
 	bottom: 90px;
 	margin: 0 auto;
@@ -132,7 +139,7 @@ p{
 .page {
 	position: relative;
 	right: 0;
-	@include prefix(transition, 0.2s ease);
+    @include prefix(transition, .3s ease);
 }
 
 .img-main {
@@ -198,13 +205,14 @@ video.snow {
 }
 
 .title{
-	@include prefix(transition, $hide-duration ease);
+	@include prefix(transition, all 0.3s ease);
 	color: $color-text;
 	font-family: $font-family--secondary;
 	text-shadow: 0px 0px 50px $white;
 	position: relative;
 	display: inline-block;
 	margin: 10px 0px;
+    right: 0;
 	&.hide{
 		opacity: 0;
 	}
@@ -216,7 +224,7 @@ video.snow {
 }
 
 #btn-menu{
-	@include prefix(transition, right 0.4s ease);
+	@include prefix(transition, right 0.3s ease);
 	position: fixed;
 	opacity: .9;
 	top: 2%;
@@ -242,12 +250,15 @@ video.snow {
 }
 
 .controls{
-	@include prefix(transition, .4s ease);
+	@include prefix(transition, all .3s ease);
+    @include box-shadow(7px 0 16px #000 inset);
 	width: 30%;
 	overflow-y: auto;
 	height: 100%;
 	text-align: center;
-	right: -30%;
+    right: -30%;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
 	background-color: $color-bg--section;
 	position: fixed;
 	z-index: 3;
