@@ -185,3 +185,17 @@ $('body').keyup(function(e){
        $('#trigger-menu').trigger('click');
     }
 });
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var devmode = parseInt(getParameterByName('dev'));
+
+// print year to license
+if (devmode==1) {
+    $('body').addClass('dev');
+}

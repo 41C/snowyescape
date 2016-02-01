@@ -48,6 +48,24 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+
+    &.dev {
+        .img-main {
+            opacity: .3;
+        }
+        * {
+            border: 1px dashed cyan;
+        }
+        .candle::after {
+            content:'';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: -12px;
+            top: -12;
+            background-color: white;
+        }
+    }
 }
 
 a{
