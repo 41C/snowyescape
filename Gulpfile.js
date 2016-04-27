@@ -7,6 +7,7 @@ var gulp = require('gulp'),
 
 gulp.task('styles', function () {
 	gulp.src('styles/**/*.scss')
+	        .pipe(sass().on('error', sass.logError))
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('dist'));
