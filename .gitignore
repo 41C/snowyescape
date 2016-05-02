@@ -3,3 +3,7 @@ node_modules
 .sass-cache
 *.map
 styles/build/
+*.idea
+*.pxm
+*.sketch
+*.psd
