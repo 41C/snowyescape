@@ -2,6 +2,8 @@
 
 Escape to your own personal log cabin in the woods. Enjoy the ambient sounds of a roaring fireplace during a snowstorm. [Visit Website →](http://snowyescape.com)
 
+<img width="1277" alt="screen shot 2016-10-01 at 10 29 59 pm" src="https://cloud.githubusercontent.com/assets/6676674/19018200/b26791b8-8826-11e6-887e-2b5f29a222eb.png">
+
 ## Setup
 
 We are using [Gulp](http://gulpjs.com/).
