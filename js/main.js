@@ -206,7 +206,7 @@ function adjustBackground(isGray){
 	var current_minute = (date.getMinutes())%60;
 	var brightness_prev = brightness[current_hour];
 	var brightness_next = brightness[(current_hour+1)%24];
-	
+
 	// Peak brightness at 12 hrs and peak darkness at 0 hrs
 	var cur_brightness = (brightness_prev * (60-current_minute) + brightness_next * (current_minute)) / 60;
 	var scale_brightness = Math.round(brightness_min + (cur_brightness / 12.0) * (brightness_max - brightness_min));
