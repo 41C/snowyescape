@@ -28,7 +28,7 @@ and
 
   SnowyEscape
 
-  Copyright 2014 by James Pistell and Joseph Fusco
+  Copyright 2014-2016 by James Pistell and Joseph Fusco
 
   SnowyEscape is released under the GPL
 
