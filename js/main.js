@@ -1,10 +1,13 @@
 // set starting values for audio channels
 var seSnowVolume = 15;
 var seFireVolume = 75;
+var isGray = 0;
 
 $(document).ready(function(){
 	$(".audio-wind").prop("volume", (seSnowVolume / 100));
 	$(".audio-fire").prop("volume", (seFireVolume / 100));
+	adjustBackground(isGray);
+	setInterval(adjustBackground(isGray),10000);
 });
 
 // User volume adjustments
@@ -174,6 +177,8 @@ $('body').keyup(function(e){
 	if(e.keyCode == 71){
 		$('video.fire').toggleClass("grayscale");
 		$('.img-main').toggleClass("grayscale");
+		isGray = 1 - isGray;
+		adjustBackground(isGray);
 		ga('send', 'event', 'Controls', 'toggled', 'grayscale');
 	}
 	// toggle hide/show text
@@ -185,6 +190,36 @@ $('body').keyup(function(e){
 		$('#trigger-menu').trigger('click');
 	}
 });
+
+// Brightness variation throughout the day
+var brightness = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+				  11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+// Adjust image brightness and contrast according to the time of the day
+function adjustBackground(isGray){
+	var img = document.getElementById('img-main-bg');
+	var date = new Date();
+
+	var brightness_min = 50;
+	var brightness_max = 200;
+
+	var current_hour = (date.getHours())%24;
+	var current_minute = (date.getMinutes())%60;
+	var brightness_prev = brightness[current_hour];
+	var brightness_next = brightness[(current_hour+1)%24];
+	
+	// Peak brightness at 12 hrs and peak darkness at 0 hrs
+	var cur_brightness = (brightness_prev * (60-current_minute) + brightness_next * (current_minute)) / 60;
+	var scale_brightness = Math.round(brightness_min + (cur_brightness / 12.0) * (brightness_max - brightness_min));
+
+	if (!isGray) {
+		img.style["-webkit-filter"] = "brightness(" + scale_brightness.toString() + "%)";
+		img.style["filter"] = "brightness(" + scale_brightness.toString() + "%)";
+	}
+	else {
+		img.style["-webkit-filter"] = "grayscale(100%)";
+		img.style["filter"] = "grayscale(100%)";
+	}
+}
 
 function getParameterByName(name) {
 	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
