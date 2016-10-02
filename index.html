@@ -37,37 +37,36 @@
 </head>
 <body>
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '525550130915463',
-      xfbml      : true
-    });
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '525550130915463',
+			xfbml      : true
+		});
+	};
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
 </script>
 
 <script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
+	var js, fjs = d.getElementsByTagName(s)[0],
+	t = window.twttr || {};
+	if (d.getElementById(id)) return t;
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "https://platform.twitter.com/widgets.js";
+	fjs.parentNode.insertBefore(js, fjs);
+	t._e = [];
+	t.ready = function(f) {
+	t._e.push(f);
+	};
+	return t;
+}(document, "script", "twitter-wjs"));
+</script>
 
 	<div id="loading">
 		<div>
@@ -81,28 +80,28 @@
 
 	<div class="controls">
 
+		<!-- snow volume controls -->
 		<p class="controls__title">Snow Volume</p>
-
 		<a class="btn volume volume-down-wind"><i class="fa fa-minus"></i></a>
 		<div class="value-wind val">15</div>
 		<a class="btn volume volume-up-wind"><i class="fa fa-plus"></i></a>
 
+		<!-- fire volume controls -->
 		<p class="controls__title">Fire Volume</p>
-
 		<a class="btn volume volume-down-fire"><i class="fa fa-minus"></i></a>
 		<div class="value-fire val">75</div>
 		<a class="btn volume volume-up-fire"><i class="fa fa-plus"></i></a>
-
 		<div class="split"></div>
 
+		<!-- mute controls -->
 		<a class="btn mute"><i class="fa fa-volume-up"></i></a>
-
 		<div class="split"></div>
 
+		<!-- hide / show text controls -->
 		<a class="btn hide-text">Hide Text</a>
-
 		<div class="split"></div>
 
+		<!-- control keyboard shortcut -->
 		<div class="shortcuts">
 			<p class="shortcut"><span>M</span> menu</p>
 			<p class="shortcut"><span>H</span> hide text</p>
@@ -113,41 +112,32 @@
 		<div class="credit">
 			<p>Developed by<br><a href="http://www.linkedin.com/in/jamespistell" target="_blank" class="safaritest">James Pistell</a> &amp;<a href="http://josephfus.co/?ref=snowyescape.com" target="_blank" class="safaritest"> Joseph Fusco</a>.<br>Photo Credit to <a href="http://www.brushcreekranch.com/?ref=snowyescape.com" target="_blank">Brush Creek Ranch</a><p>
 		</div>
-
 	</div>
 
 	<div class="page">
-
 		<div class="title-wrap">
 			<h1 class="title">Snowy Escape</h1>
 		</div>
-
 		<video class="snow" autoplay muted loop>
-	      <source src="video/snow.mp4" type="video/mp4">
-	      <source src="video/snow.ogv" type="video/ogg">
-	    </video>
-
+			<source src="video/snow.mp4" type="video/mp4">
+			<source src="video/snow.ogv" type="video/ogg">
+		</video>
 		<video class="fire" autoplay muted loop>
-	      <source src="video/fire.mp4" type="video/mp4">
-	      <source src="video/fire.ogv" type="video/ogg">
-	    </video>
-
-	    <audio class="audio audio-wind" loop>
-	      <source src="audio/snow.ogg" type="audio/ogg">
-	      <source src="audio/snow.m4a" type="audio/mpeg">
-	    </audio>
-
+			<source src="video/fire.mp4" type="video/mp4">
+			<source src="video/fire.ogv" type="video/ogg">
+		</video>
+		<audio class="audio audio-wind" loop>
+			<source src="audio/snow.ogg" type="audio/ogg">
+			<source src="audio/snow.m4a" type="audio/mpeg">
+		</audio>
 		<audio class="audio audio-fire" loop>
-	      <source src="audio/fire.ogg" type="audio/ogg">
-	      <source src="audio/fire.m4a" type="audio/mpeg">
-	    </audio>
-
-	    <a class="mobile-play"><i class="fa fa-play"></i></a>
-
-	    <audio id="audio-mobile" class="audio audio-mobile" loop>
-	      <source src="audio/snow-fire-combined.m4a" type="audio/mpeg">
-	    </audio>
-
+			<source src="audio/fire.ogg" type="audio/ogg">
+			<source src="audio/fire.m4a" type="audio/mpeg">
+		</audio>
+		<a class="mobile-play"><i class="fa fa-play"></i></a>
+		<audio id="audio-mobile" class="audio audio-mobile" loop>
+			<source src="audio/snow-fire-combined.m4a" type="audio/mpeg">
+		</audio>
 		<img class="img-main" src="images/cabin-bg.png" alt="">
 		<div class="candle candle__1"></div>
 		<div class="candle candle__2"></div>
@@ -156,41 +146,39 @@
 		<div class="candle candle__5"></div>
 		<div class="candle candle__6"></div>
 		<div class="candle candle__7"></div>
-
 		<div class="social-share"></div>
-
-	</div>
+	</div><!-- page -->
 
 <script type="text/javascript" src="dist/main.min.js"></script>
 <script type="text/javascript">
-  new Share('.social-share', {
-    title: "SnowyEscape.com",
-    description: "Escape to your own personal winter wonderland with fireplace and snowstorm ambient music.",
-    image: 'http://snowyescape.github.io/snowyescape/images/cabin-share.jpg',
-    url: 'http://SnowyEscape.com',
-    ui: {
-      flyout: "top center"
-    },
-    networks: {
-      facebook: {
-        load_sdk: true,
-        app_id: "525550130915463",
-        caption: "A monastic meditative experience.",
-      },
-      pinterest: {
-        enabled: true,
-      }
-    }
-  });
+	new Share('.social-share', {
+		title: "SnowyEscape.com",
+		description: "Escape to your own personal winter wonderland with fireplace and snowstorm ambient music.",
+		image: 'http://snowyescape.github.io/snowyescape/images/cabin-share.jpg',
+		url: 'http://SnowyEscape.com',
+		ui: {
+			flyout: "top center"
+		},
+		networks: {
+			facebook: {
+				load_sdk: true,
+				app_id: "525550130915463",
+				caption: "A monastic meditative experience.",
+			},
+			pinterest: {
+				enabled: true,
+			}
+		}
+	});
 </script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-57526024-1', 'auto');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-57526024-1', 'auto');
+	ga('require', 'displayfeatures');
+	ga('send', 'pageview');
 </script>
 </body>
 </html>
