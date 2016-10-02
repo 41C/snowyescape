@@ -1,5 +1,3 @@
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 SnowyEscape (snowyescape.com)
 
 Copyright 2015 by James Pistell and Joseph Fusco
@@ -21,21 +19,22 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 This program incorporates work covered by the following copyright and
 permission notices:
 
-  Wherever third party code has been used, credit has been given in the code's
-  comments.
+Wherever third party code has been used, credit has been given in the code's
+comments.
 
 and
 
-  SnowyEscape
+SnowyEscape
 
-  Copyright 2014-2016 by James Pistell and Joseph Fusco
+Copyright 2014-2016 by James Pistell and Joseph Fusco
 
-  SnowyEscape is released under the GPL
+SnowyEscape is released under the GPL
 
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+---
 
-                    GNU GENERAL PUBLIC LICENSE
-                       Version 2, June 1991
+GNU GENERAL PUBLIC LICENSE
+
+Version 2, June 1991
 
  Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
