@@ -23,3 +23,7 @@ gulp
 + Photo Credit - [Brush Creek Ranch](http://www.brushcreekranch.com/?ref=snowyescape.com)
 
 Original Site by [James Pistell](https://www.linkedin.com/in/jamespistell/?ref=github.com/41chap/snowyescape) & [Joseph Fusco](http://josephfus.co/?ref=github.com/41chap/snowyescape)
+
+## Contributors
+
+[@joephfusco](https://github.com/josephfusco) [@pistell](https://github.com/pistell) [@erilyth](https://github.com/erilyth)
