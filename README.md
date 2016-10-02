@@ -1,4 +1,4 @@
-# SnowyEscape :snowflake::evergreen_tree::snowflake::house_with_garden::snowflake::evergreen_tree::snowflake: 
+# SnowyEscape :snowflake::evergreen_tree::snowflake::house_with_garden::snowflake::evergreen_tree::snowflake:
 
 Escape to your own personal log cabin in the woods. Enjoy the ambient sounds of a roaring fireplace during a snowstorm. [Visit Website →](http://snowyescape.com)
 
@@ -17,7 +17,7 @@ This will download the needed dependencies set for this project. In order to com
 gulp
 ```
 
-## Credit
+## Acknowledgments
 
 + CSS Candle Flicker - [codepen.io](http://codepen.io/fusco/pen/NPxzPV)
 + Photo Credit - [Brush Creek Ranch](http://www.brushcreekranch.com/?ref=snowyescape.com)
