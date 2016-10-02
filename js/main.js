@@ -24,7 +24,7 @@ $(".page").click(function(){
 // User volume adjustments
 function volumeUpFire(){
 	var volume = $(".audio-fire").prop("volume")+0.05;
-	if(volume >1){
+	if(volume > 1){
 		volume = 1;
 	}
 	$(".audio-fire").prop("volume",volume);
@@ -33,7 +33,7 @@ function volumeUpFire(){
 
 function volumeDownFire(){
 	var volume = $(".audio-fire").prop("volume")-0.05;
-	if(volume <0){
+	if(volume < 0){
 		volume = 0;
 	}
 	$(".audio-fire").prop("volume",volume);
@@ -42,7 +42,7 @@ function volumeDownFire(){
 
 function volumeUpWind(){
 	var volume = $(".audio-wind").prop("volume")+0.05;
-	if(volume >1){
+	if(volume > 1){
 		volume = 1;
 	}
 	$(".audio-wind").prop("volume",volume);
@@ -51,7 +51,7 @@ function volumeUpWind(){
 
 function volumeDownWind(){
 	var volume = $(".audio-wind").prop("volume")-0.05;
-	if(volume <0){
+	if(volume < 0){
 		volume = 0;
 	}
 	$(".audio-wind").prop("volume",volume);
@@ -196,11 +196,11 @@ var brightness = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 				  11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 // Adjust image brightness and contrast according to the time of the day
 function adjustBackground(isGray){
-	var img = document.getElementById('img-main-bg');
+	var vid = document.getElementById('snow');
 	var date = new Date();
 
-	var brightness_min = 50;
-	var brightness_max = 200;
+	var brightness_min = 20;
+	var brightness_max = 120;
 
 	var current_hour = (date.getHours())%24;
 	var current_minute = (date.getMinutes())%60;
@@ -212,12 +212,12 @@ function adjustBackground(isGray){
 	var scale_brightness = Math.round(brightness_min + (cur_brightness / 12.0) * (brightness_max - brightness_min));
 
 	if (!isGray) {
-		img.style["-webkit-filter"] = "brightness(" + scale_brightness.toString() + "%)";
-		img.style["filter"] = "brightness(" + scale_brightness.toString() + "%)";
+		vid.style["-webkit-filter"] = "brightness(" + scale_brightness.toString() + "%)";
+		vid.style["filter"] = "brightness(" + scale_brightness.toString() + "%)";
 	}
 	else {
-		img.style["-webkit-filter"] = "grayscale(100%)";
-		img.style["filter"] = "grayscale(100%)";
+		vid.style["-webkit-filter"] = "grayscale(100%)";
+		vid.style["filter"] = "grayscale(100%)";
 	}
 }
 
