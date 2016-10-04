@@ -161,7 +161,14 @@ $(".mobile-play").click(function(){
 $('.hide-text').click( function(){
 	$('.title').toggleClass("hide");
 	$('footer').toggleClass("hide");
-	$('.social-share').toggleClass("hide");
+	var social_share = $('.social-share');
+	social_share.toggleClass("hide");
+	if(social_share.hasClass("hide")){
+		social_share.css("display", "none");
+	}
+	else{
+		social_share.css("display", "block");
+	}
 	$('#btn-menu').toggleClass("shrink");
 	$('.hide-text').html($('.hide-text').text() == 'Hide Text' ? 'Show Text' : 'Hide Text');
 	ga('send', 'event', 'Controls', 'toggle', 'hide/show text');
