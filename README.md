@@ -26,4 +26,4 @@ Original Site by [James Pistell](https://www.linkedin.com/in/jamespistell/?ref=g
 
 ## Contributors
 
-[@joephfusco](https://github.com/josephfusco) [@pistell](https://github.com/pistell) [@erilyth](https://github.com/erilyth)
+[@josephfusco](https://github.com/josephfusco) [@pistell](https://github.com/pistell) [@erilyth](https://github.com/erilyth)
