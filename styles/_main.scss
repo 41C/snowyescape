@@ -237,9 +237,11 @@ video.snow {
 	position: relative;
 	display: inline-block;
 	margin: 10px 0px;
-    right: 0;
+	right: 0;
+	display: block;
 	&.hide{
 		opacity: 0;
+		display: none;
 	}
 }
 
