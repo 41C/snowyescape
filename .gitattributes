@@ -1,0 +1,8 @@
+# Files to exclude when creating archive.
+
+*.git export-ignore
+*.gitignore export-ignore
+*.gitattributes export-ignore
+Gulpfile.js export-ignore
+package.json export-ignore
+CNAME export-ignore
