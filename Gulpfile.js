@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch');
 
 gulp.task('styles', function () {
-	gulp.src('styles/**/*.scss')
+	gulp.src('assets/styles/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(rename({suffix: '.min'}))
@@ -14,7 +14,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('js', function() {
-	gulp.src(['js/jquery-1.11.3.js', 'js/share.js', 'js/main.js'])
+	gulp.src(['assets/js/jquery-1.11.3.js', 'assets/js/share.js', 'assets/js/main.js'])
 		.pipe(concat({path: 'main.js'}))
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))
@@ -22,9 +22,8 @@ gulp.task('js', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('styles/**/*.scss', ['styles']);
-	gulp.watch('js/*.js', ['js']);
-	gulp.watch('data/*.json', ['data']);
+	gulp.watch('assets/styles/**/*.scss', ['styles']);
+	gulp.watch('assets/js/*.js', ['js']);
 });
 
 gulp.task('default', ['styles', 'js', 'watch']);
