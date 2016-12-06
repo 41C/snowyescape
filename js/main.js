@@ -1,6 +1,7 @@
 // set starting values for audio channels
-var seSnowVolume = 15;
-var seFireVolume = 75;
+var seSnowVolume = readCookie('windVolumeCookie')?readCookie('windVolumeCookie'):15;
+var seFireVolume = readCookie('fireVolumeCookie')?readCookie('fireVolumeCookie'):75;
+var textDisplay = readCookie('textCookie')?readCookie('textCookie'):1;
 var isGray = 0;
 
 $(document).ready(function(){
@@ -8,6 +9,12 @@ $(document).ready(function(){
 	$(".audio-fire").prop("volume", (seFireVolume / 100));
 	adjustBackground(isGray);
 	setInterval(adjustBackground(isGray),10000);
+	$(".value-wind").html(seSnowVolume);
+	$(".value-fire").html(seFireVolume);
+	if(textDisplay == 0){
+		textDisplay = 1; // Prevent the value from changing
+		$(".hide-text").trigger("click");
+	}
 });
 
 // User volume adjustments
@@ -62,6 +69,7 @@ function updateWind(volume){
 	volume = Math.round(volume * 100);
 	$(".value-wind").html(volume);
 	seSnowVolume = volume;
+	createCookie('windVolumeCookie',volume,100);
 	watchSnowVolume();
 }
 
@@ -69,6 +77,7 @@ function updateFire(volume){
 	volume = Math.round(volume * 100);
 	$(".value-fire").html(volume);
 	seFireVolume = volume;
+	createCookie('fireVolumeCookie',volume,100);
 	watchFireVolume();
 }
 
@@ -98,7 +107,6 @@ function watchFireVolume() {
 
 watchSnowVolume();
 watchFireVolume();
-
 function toggleMute(){
 	$(".audio-wind").prop("muted",!$(".audio-wind").prop("muted"));
 	$(".audio-fire").prop("muted",!$(".audio-fire").prop("muted"));
@@ -172,6 +180,8 @@ $('.hide-text').click( function(){
 	$('#btn-menu').toggleClass("shrink");
 	$('.hide-text').html($('.hide-text').text() == 'Hide Text' ? 'Show Text' : 'Hide Text');
 	ga('send', 'event', 'Controls', 'toggle', 'hide/show text');
+	textDisplay = (textDisplay==1)?0:1;
+	createCookie('textCookie',textDisplay,100);
 });
 
 // spacebar pausing
@@ -241,3 +251,30 @@ var devmode = parseInt(getParameterByName('dev'));
 if (devmode==1) {
 	$('body').addClass('dev');
 }
+
+//Creating Cookie
+function createCookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+// Reading Cookie Value
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+//Erasing Cookie
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+}
+
