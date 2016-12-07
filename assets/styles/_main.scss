@@ -49,26 +49,26 @@ body {
 		background-size: cover;
 	}
 
-    &.dev {
-        .img-main {
-            opacity: .3;
-        }
-        * {
-            border: 1px dashed cyan;
-        }
-        .candle::after {
-            content:'';
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            left: -12px;
-            top: -12;
-            background-color: white;
-        }
-        #loading {
-            background-color: #111;
-        }
-    }
+	&.dev {
+		.img-main {
+			opacity: .3;
+		}
+		* {
+			border: 1px dashed cyan;
+		}
+		.candle::after {
+			content:'';
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			left: -12px;
+			top: -12;
+			background-color: white;
+		}
+		#loading {
+			background-color: #111;
+		}
+	}
 }
 
 a{
@@ -84,20 +84,20 @@ p{
 	display: none;
 	&:checked {
 		~ .controls {
-            -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
 		}
-        ~ .page {
-            -webkit-transform: translateX(-30%);
-            transform: translateX(-30%);
-        }
+		~ .page {
+			-webkit-transform: translateX(-30%);
+			transform: translateX(-30%);
+		}
 		+ #btn-menu {
-            background-color: rgba($black, 1);
+			background-color: rgba($black, 1);
 			right: 30%;
 			.fa{
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 1;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
 				@include prefix(transform, rotate(180deg));
 			}
 		}
@@ -145,6 +145,9 @@ p{
 			}
 		}
 	}
+	body.mobile & {
+		display: none;
+	}
 }
 
 // show play button on mobile devices only
@@ -187,10 +190,10 @@ p{
 
 .social-share {
 	@include prefix(transition, all 0.3s ease);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 	position: fixed;
-    left: 0;
+	left: 0;
 	right: 0;
 	bottom: 90px;
 	margin: 0 auto;
@@ -214,8 +217,8 @@ p{
 	z-index: 1;
 	&.grayscale{
 		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-    	filter: gray;
-        -webkit-filter: grayscale(100%);
+		filter: gray;
+		-webkit-filter: grayscale(100%);
 	}
 	body.mobile &{
 		display: none;
@@ -232,8 +235,8 @@ video.fire {
 	@include prefix(transform, rotate(-5deg));
 	&.grayscale{
 		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-    	filter: gray;
-        -webkit-filter: grayscale(100%);
+		filter: gray;
+		-webkit-filter: grayscale(100%);
 	}
 
 	body.mobile & {
@@ -341,9 +344,9 @@ video.snow {
 	overflow-y: auto;
 	height: 100%;
 	text-align: center;
-    right: -30%;
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+	right: -30%;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
 	background-color: $color-bg--section;
 	position: fixed;
 	z-index: 3;
