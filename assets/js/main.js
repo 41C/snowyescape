@@ -1,9 +1,10 @@
 (function($) {
-	
+
 	// set starting values for audio channels
 	var seSnowVolume = 15;
 	var seFireVolume = 75;
 	var isGray = 0;
+	const fullscreenTarget = $('body')[0]
 
 	$(document).ready(function(){
 		$(".audio-wind").prop("volume", (seSnowVolume / 100));
@@ -166,6 +167,12 @@
 		}
 	});
 
+	$('#fullscreen').click( function(){
+		if (screenfull.enabled) {
+			screenfull.toggle(event.fullscreenTarget);
+		}
+	});
+
 	$('.hide-text').click( function(){
 		$('.title').toggleClass("hide");
 		$('footer').toggleClass("hide");
@@ -177,7 +184,7 @@
 		else{
 			social_share.css("display", "block");
 		}
-		$('#btn-menu').toggleClass("shrink");
+		$('#btn-menu, #fullscreen').toggleClass("shrink");
 		$('.hide-text').html($('.hide-text').text() == 'Hide Text' ? 'Show Text' : 'Hide Text');
 		ga('send', 'event', 'Controls', 'toggle', 'hide/show text');
 	});

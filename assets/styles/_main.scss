@@ -108,6 +108,45 @@ p{
 	@include no-select();
 }
 
+#fullscreen {
+	top: 0;
+	left: 0;
+	@include prefix(transition, all 0.3s ease);
+	position: fixed;
+	opacity: .9;
+	background-color: $black;
+	color: #FDE3A7;
+	border-radius: 7px;
+	padding: 20px;
+	z-index: 4;
+	font-size: 1.5em;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	.fa {
+		@include prefix(transition, all 0.3s ease);
+	}
+	&:hover, &:focus {
+		color: $flat-turquoise;
+	}
+	&.shrink {
+		background-color: rgba($black, 0);
+		.fa {
+			-webkit-transform: scale(0.5);
+			transform: scale(0.5);
+			opacity: .4;
+		}
+		&:hover {
+			background-color: rgba($black, 1);
+			.fa {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+	}
+}
+
 // show play button on mobile devices only
 .play {
 	display: none;
@@ -269,22 +308,22 @@ video.snow {
 		color: $link--hover;
 	}
 
-    &.shrink {
-        background-color: rgba($black, 0);
-        .fa {
-            -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-            opacity: .4;
-        }
-        &:hover {
-            background-color: rgba($black, 1);
-            .fa {
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-    }
+	&.shrink {
+		background-color: rgba($black, 0);
+		.fa {
+			-webkit-transform: scale(0.5);
+			transform: scale(0.5);
+			opacity: .4;
+		}
+		&:hover {
+			background-color: rgba($black, 1);
+			.fa {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+	}
 
 	body.mobile & {
 		display: none;
@@ -468,6 +507,9 @@ footer {
 	}
 	#btn-menu {
 		font-size: 1.2em;
+	}
+	#fullscreen {
+		font-size: 1em;
 	}
 	.controls {
 		padding: 10px 0px;

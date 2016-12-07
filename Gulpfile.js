@@ -14,7 +14,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('js', function() {
-	gulp.src(['assets/js/jquery-1.11.3.js', 'assets/js/share.js', 'assets/js/main.js'])
+	gulp.src(['assets/js/jquery-1.11.3.js', 'assets/js/screenfull.js', 'assets/js/share.js', 'assets/js/main.js'])
 		.pipe(concat({path: 'main.js'}))
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))
