@@ -37,6 +37,16 @@
 </head>
 <body>
 <script>
+	//Workaround for Chrome's Stupid autoplay rules
+	//https://stackoverflow.com/questions/51589420/how-to-make-audio-autoplay-works-in-google-chrome	
+	document.addEventListener('click', function(){
+		var snowAudio = document.getElementById("snowAudio");
+		var windAudio = document.getElementById("windAudio");
+		snowAudio.play();
+		windAudio.play();		
+	});
+</script>
+<script>
 	window.fbAsyncInit = function() {
 		FB.init({
 			appId      : '525550130915463',
@@ -127,11 +137,11 @@
 			<source src="assets/video/fire.mp4" type="video/mp4">
 			<source src="assets/video/fire.ogv" type="video/ogg">
 		</video>
-		<audio class="audio audio-wind" loop>
+		<audio class="audio audio-wind" loop id="windAudio">
 			<source src="assets/audio/snow.ogg" type="audio/ogg">
 			<source src="assets/audio/snow.m4a" type="audio/mpeg">
 		</audio>
-		<audio class="audio audio-fire" loop>
+		<audio class="audio audio-fire" loop id="snowAudio">
 			<source src="assets/audio/fire.ogg" type="audio/ogg">
 			<source src="assets/audio/fire.m4a" type="audio/mpeg">
 		</audio>
